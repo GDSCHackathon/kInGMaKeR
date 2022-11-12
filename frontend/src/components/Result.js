@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useConfetti from "../utils/useConfetti";
 
+const SEVER_URL =
+  "http://gdsc22-env.eba-swrfzbdy.ap-northeast-2.elasticbeanstalk.com/";
+
 function Result() {
   const [nickname, setNickname] = useState("???");
   const [size, setSize] = useState(0);
@@ -15,7 +18,7 @@ function Result() {
   }, []);
 
   const getNickname = () => {
-    fetch("http://192.168.124.41:8080/result")
+    fetch(SEVER_URL)
       .then((res) => res.json())
       .then((data) => setNickname((nickname) => data.result))
       .catch((e) => console.log(e));
