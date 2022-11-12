@@ -5,30 +5,8 @@
   font-size: 100px;
   line-height: 45px;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 5%;
   margin-bottom: -15px;
-}
-
-#heesu {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-#jinsu {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-#byungju {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-#dohoon {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
 }
 
 div {
@@ -39,18 +17,19 @@ div {
   background-color: #d9d9d9; /* Green */
   border: none;
   margin: auto;
-  margin-top: 13%;
-  color: black;
+  margin-top: 14%;
+  color: rgb(95, 95, 95);
   padding: 10px 30px 10px 30px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
   border-radius: 12px;
+  opacity: 50%;
 }
 .imgHoverEvent {
   width: 200px;
   height: 200px;
-  margin: 40px;
+  margin: 40px 0 40px 0;
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -73,6 +52,11 @@ div {
   margin-top: 60px;
   text-decoration-line: none;
 }
+
+.text{
+  margin-top: 60px;
+}
+
 .event1 .hoverBox {
   background: linear-gradient(
     to bottom,
