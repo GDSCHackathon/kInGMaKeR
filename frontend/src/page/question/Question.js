@@ -99,7 +99,13 @@ function ResultButton() {
     navigate("/result");
   };
 
-  return <input defaultValue="결과 확인하기" onClick={onClick}></input>;
+  return (
+    <input
+      className="button__result"
+      defaultValue="결과 확인하기"
+      onDoubleClick={onClick}
+    ></input>
+  );
 }
 
 export default QuestionPage;
