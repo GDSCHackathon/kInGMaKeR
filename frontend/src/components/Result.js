@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import useConfetti from "../utils/useConfetti";
 
 const SEVER_URL =
-  "http://gdsc22-env.eba-swrfzbdy.ap-northeast-2.elasticbeanstalk.com/";
+  "http://gdsc22-env.eba-swrfzbdy.ap-northeast-2.elasticbeanstalk.com/result";
 
 function Result() {
   const [nickname, setNickname] = useState("???");
