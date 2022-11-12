@@ -10,7 +10,17 @@ function Title() {
           <button id="startButton">{">"}</button>
         </Link>
       </div>
-      <p id="title">kInGMaKeR</p>
+      <p id="title">
+        <span>k</span>
+        <span>I</span>
+        <span>n</span>
+        <span>G</span>
+        <span>M</span>
+        <span>a</span>
+        <span>K</span>
+        <span>e</span>
+        <span>R</span>
+      </p>
       <div class="imgHoverEvent event1">
         <div class="imgBox"></div>
         <div class="hoverBox">
