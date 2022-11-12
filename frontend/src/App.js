@@ -1,11 +1,18 @@
 import React from "react";
-import Text from "./components/Text";
 import "./App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Title from "./components/Title";
+import QnA from "./components/QnA";
 
 function App() {
   return (
     <div className="App">
-      <Text />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Title />}></Route>
+          <Route path="/QnA" element={<QnA />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
