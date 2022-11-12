@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import leftButton from "../../assets/left.svg";
 import rightButton from "../../assets/right.svg";
 
@@ -92,7 +93,13 @@ function Question({ title, placeholder, index }) {
 }
 
 function ResultButton() {
-  return <input defaultValue="결과 확인하기"></input>;
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate("/result");
+  };
+
+  return <input defaultValue="결과 확인하기" onClick={onClick}></input>;
 }
 
 export default QuestionPage;

@@ -6,7 +6,7 @@ function Title() {
   return (
     <div>
       <div>
-        <Link to="/QnA">
+        <Link to="/qna">
           <button id="startButton" onClick={() => console.log("다음 페이지")}>
             START
           </button>
