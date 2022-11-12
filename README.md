@@ -3,9 +3,19 @@
   <img src="https://user-images.githubusercontent.com/65100540/201483824-1d00582b-af1b-4ef4-b5f0-95c0ef5603f7.png" width=300 />
 </p>
 
+<p align=center>닉네임 정하시느라 힘드셨죠?</p>
+<p align=center>🤴kInGMaKeR🤴가 해결해 드립니다 🙌</p>
+
+<br>
+
 <h2 align=center>✨킹🤴🏻 받는🤲 닉네임⚙️작명소✨</h2>
 
 ## 소개
+
+<p>몇가지 정보를 입력해주세요 🙌</p>
+<p>그럼 🤴kInGMaKeR🤴 입력주신 데이터를 분석해⚙️ 여러분에게 제일 적합한 닉네임을 만들어드려요 🙌</p>
+
+<br>
 
 <table align=center>
   <thead>
