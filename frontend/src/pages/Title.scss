@@ -1,0 +1,71 @@
+#title {
+  font-family: "Major Mono Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: -15px;
+}
+
+div {
+  text-align: center;
+}
+
+#startButton {
+  background-color: #d9d9d9; /* Green */
+  border: none;
+  margin: auto;
+  margin-top: 13%;
+  color: black;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+}
+.imgHoverEvent {
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.imgHoverEvent .imgBox {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.imgHoverEvent .hoverBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.hoverBox Link {
+  margin-top: 60px;
+  text-decoration-line: none;
+}
+.event1 .hoverBox {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(255, 255, 255, 1) 90%
+  );
+  opacity: 0;
+  transform: translateY(60%);
+  transition: 2s;
+}
+.event1:hover .hoverBox {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.event1:hover .hoverBox {
+  transform: translateY(0);
+}
