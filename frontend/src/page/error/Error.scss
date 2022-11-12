@@ -1,11 +1,18 @@
 #errorImage {
-  bottom: 10px;
-  right: 10px;
-
+  bottom: 20px;
+  right: 30px;
   position: absolute;
+}
+
+#merong {
+  position: absolute;
+  bottom: 270px;
+  right: 50px;
+  writing-mode: vertical-rl;
+  font-size: 200px;
 }
 
 #errorMessage {
   writing-mode: vertical-rl;
-  margin: 76px 0px 0px 38px;
+  margin: 76px 0px 0px 70px;
 }
