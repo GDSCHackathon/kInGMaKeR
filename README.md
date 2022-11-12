@@ -13,13 +13,13 @@
       <th>박병주</th>
       <th>김진수</th>
       <th>백도훈</th>
-      <th>강희수</th>
+      <th>정희수</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align=center>
-        <img src="https://avatars.githubusercontent.com/u/97269799?v=4" width=100 />
+        <img src="https://user-images.githubusercontent.com/65100540/201484293-12dac57c-69d8-4ca7-a17d-0dd1d0bbf2c5.jpeg" width=100 height=100 />
       </td>
       <td align=center>
         <img src="https://avatars.githubusercontent.com/u/97269799?v=4" width=100 />
@@ -32,7 +32,20 @@
       </td>
     </tr>
     <tr>
-      
+      <td align=center>
+        <a href="https://github.com/zzuzzu0205">@zzuzzu0205</a>
+      </td>
+      <td align=center>
+        <a href="https://github.com/dgjinsu">@dgjinsu</a>
+      </td>
+       <td align=center>
+        <a href="https://github.com/dohun31">@dohun31</a>
+      </td>
+       <td align=center>
+        <a href="https://github.com/heeeeee0129">@heeeeee0129</a>
+      </td>
     </tr>
   </tbody>
 </table>
+
+
