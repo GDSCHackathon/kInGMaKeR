@@ -22,6 +22,8 @@ function Result() {
     fetch(URL)
       .then((res) => {
         console.log(res);
+        console.log(res.json());
+        return res.json();
       })
       .then(({ words }) => setNickname(() => words[0]))
       .catch((e) => console.log(e));
