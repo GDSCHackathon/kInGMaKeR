@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useConfetti from "../utils/useConfetti";
 
-const SEVER_URL = "/?format=json&count=2";
+// const SEVER_URL = "/?format=json&count=2";
 const PROXY = window.location.hostname === "localhost" ? "" : "/proxy";
 const URL = `${PROXY}/?format=json&count=2`;
 
@@ -19,8 +19,11 @@ function Result() {
   }, []);
 
   const getNickname = () => {
-    fetch(SEVER_URL)
-      .then((res) => console.log(res))
+    fetch(URL)
+      .then((res) => {
+        console.log(res);
+        setNickname(() => "hi");
+      })
       .then((data) => console.log(data))
       .catch((e) => console.log(e));
   };
