@@ -26,6 +26,7 @@ dependencies {
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'org.json', name: 'json', version: '20090211'
 }
 
 tasks.named('test') {

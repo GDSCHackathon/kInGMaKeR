@@ -1,12 +1,18 @@
 import React from "react";
-import "./reset.scss";
 import "./App.scss";
-import QuestionPage from "./page/\bquestion/Question";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Title from "./components/Title";
+import QnA from "./components/QnA";
 
 function App() {
   return (
     <div className="App">
-      <QuestionPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Title />}></Route>
+          <Route path="/QnA" element={<QnA />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
