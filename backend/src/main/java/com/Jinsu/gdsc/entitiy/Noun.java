@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class Noun {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
 }
