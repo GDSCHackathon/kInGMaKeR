@@ -20,11 +20,11 @@ function Result() {
 
   const getNickname = () => {
     fetch(URL)
-      .then((res) => {
-        console.log(res);
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
         setNickname(() => "hi");
       })
-      .then((data) => console.log(data))
       .catch((e) => console.log(e));
   };
 
