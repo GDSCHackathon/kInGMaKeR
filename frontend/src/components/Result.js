@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useConfetti from "../utils/useConfetti";
 
-const SEVER_URL =
-  "http://gdsc22-env.eba-swrfzbdy.ap-northeast-2.elasticbeanstalk.com/result";
+const SEVER_URL = "/?format=json&count=2";
+const PROXY = window.location.hostname === "localhost" ? "" : "/proxy";
+const URL = `${PROXY}/?format=json&count=2`;
 
 function Result() {
   const [nickname, setNickname] = useState("???");
@@ -19,8 +20,8 @@ function Result() {
 
   const getNickname = () => {
     fetch(SEVER_URL)
-      .then((res) => res.json())
-      .then((data) => setNickname((nickname) => data.result))
+      .then((res) => console.log(res))
+      .then((data) => console.log(data))
       .catch((e) => console.log(e));
   };
 
