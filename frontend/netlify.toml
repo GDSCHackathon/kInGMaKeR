@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/proxy/*"
+  to = "https://nickname.hwanmoo.kr/:splat"
+  status = 200
+  force = true

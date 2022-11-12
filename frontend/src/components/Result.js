@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useConfetti from "../utils/useConfetti";
 
+// const SEVER_URL = "/?format=json&count=2";
+const PROXY = window.location.hostname === "localhost" ? "" : "/proxy";
+const URL = `${PROXY}/?format=json&count=2`;
+
 function Result() {
   const [nickname, setNickname] = useState("???");
   const [size, setSize] = useState(0);
@@ -15,9 +19,9 @@ function Result() {
   }, []);
 
   const getNickname = () => {
-    fetch("http://192.168.124.41:8080/result")
+    fetch(URL)
       .then((res) => res.json())
-      .then((data) => setNickname((nickname) => data.result))
+      .then(({ words }) => setNickname(() => words[0]))
       .catch((e) => console.log(e));
   };
 

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.io.IOException;
 import java.util.HashMap;
 
-@CrossOrigin(originPatterns = "http://localhost:3000") //cors 에러 해결
+@CrossOrigin(originPatterns = "https://golden-crisp-36adb1.netlify.app") //cors 에러 해결
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
 

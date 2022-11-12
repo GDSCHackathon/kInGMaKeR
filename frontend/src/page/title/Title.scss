@@ -93,3 +93,22 @@ div {
 .event1:hover .hoverBox {
   transform: translateY(0);
 }
+#title > span:nth-child(1),
+span:nth-child(4) {
+  color: blue;
+  font-family: Rubik Bubbles, cursive;
+}
+#title > span:nth-child(5),
+span:nth-child(6) {
+  color: red;
+  font-family: Dancing Script, cursive;
+  font-size: smaller;
+}
+#title > span:nth-child(3),
+span:nth-child(9) {
+  color: yellow;
+  font-family: Kolker Brush, cursive;
+}
+#title > span:nth-child(8) {
+  color: rgb(22, 203, 22);
+}
