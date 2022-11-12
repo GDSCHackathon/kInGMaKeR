@@ -5,7 +5,10 @@ import Text1 from "./components/no.js";
 import Result from "./components/Result.js";
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Title from "./components/Title";
+
+import Title from "./page/title/Title";
+import QnA from "./components/QnA";
+import Error from "./page/error/Error";
 import QuestionPage from "./page/question/Question";
 
 function Router() {
