@@ -4,7 +4,7 @@ import useConfetti from "../utils/useConfetti";
 
 // const SEVER_URL = "/?format=json&count=2";
 const PROXY = window.location.hostname === "localhost" ? "" : "/proxy";
-const URL = `${PROXY}/?format=json&count=2`;
+const URL = `${PROXY}/?format=json&count=1`;
 
 function Result() {
   const [nickname, setNickname] = useState("???");
@@ -20,12 +20,11 @@ function Result() {
 
   const getNickname = () => {
     fetch(URL)
-      .then((res) => {
-        console.log(res);
-        console.log(res.json());
-        return res.json();
+      .then((res) => res.json())
+      .then(({ words }) => {
+        console.log(words);
+        setNickname(() => words[0]);
       })
-      .then(({ words }) => setNickname(() => words[0]))
       .catch((e) => console.log(e));
   };
 
