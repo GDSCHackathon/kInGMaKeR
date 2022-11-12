@@ -1,3 +1,33 @@
+@import url("./page/question/question.scss");
+@import url("./reset.scss");
+
 h1 {
-  color: blue;
+  color: rgb(1, 1, 6);
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 5%;
+}
+h2 {
+  color: rgb(1, 1, 6);
+  text-align: center;
+}
+.re_btn {
+  margin-left: 45%;
+  margin-top: 5%;
+  padding: 10px 10px 10px;
+}
+.yes {
+  font-size: 100px;
+  color: white;
+  margin-left: 10%;
+  margin-right: 60%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(252, 10, 10);
+}
+.no {
+  font-size: 100px;
+  color: white;
+
+  background-color: rgb(101, 5, 255);
 }

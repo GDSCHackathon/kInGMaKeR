@@ -7,9 +7,7 @@ function Title() {
     <div>
       <div>
         <Link to="Error">
-          <button id="startButton" onClick={() => console.log("다음 페이지")}>
-            S
-          </button>
+          <button id="startButton">S</button>
         </Link>
       </div>
       <p id="title">kInGMaKeR</p>
