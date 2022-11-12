@@ -1,28 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Text from "./components/Yes.js";
+import Text1 from "./components/no.js";
+import Result from "./components/Result.js";
+import "./App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+function Router() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-
-          gdgaadfsfds
-          gdg
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/yes" element={<Text />} />
+        <Route path="/no" element={<Text1 />} />
+        <Route path="/" element={<Result />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default Router;
