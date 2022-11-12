@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import leftButton from "../../assets/left.svg";
 import rightButton from "../../assets/right.svg";
+import { DotSpinner } from "@uiball/loaders";
 
 const questions = [
   {
@@ -101,11 +102,19 @@ function ResultButton() {
   };
 
   return (
-    <input
-      className="button__result"
-      defaultValue="결과 확인하기"
-      onDoubleClick={onClick}
-    ></input>
+    <>
+      <div class="ani">
+        <DotSpinner size={350} color="#231F20" />
+      </div>
+      <div class="box">
+        <input
+          id="btn"
+          className="button__result"
+          defaultValue="결과 확인하기"
+          onDoubleClick={onClick}
+        ></input>
+      </div>
+    </>
   );
 }
 

@@ -15,6 +15,8 @@
 <p>몇가지 정보를 입력해주세요 🙌</p>
 <p>그럼 🤴kInGMaKeR🤴 입력주신 데이터를 분석해⚙️ 여러분에게 제일 적합한 닉네임을 만들어드려요</p>
 
+<a href="https://golden-crisp-36adb1.netlify.app/">서비스 이용하기</a>
+
 <br>
 
 <table align=center>
