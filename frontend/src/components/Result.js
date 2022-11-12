@@ -21,10 +21,7 @@ function Result() {
   const getNickname = () => {
     fetch(URL)
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setNickname(() => "hi");
-      })
+      .then(({ words }) => setNickname(() => words[0]))
       .catch((e) => console.log(e));
   };
 
