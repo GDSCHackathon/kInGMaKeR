@@ -16,8 +16,8 @@ const fire = (particleRatio, options) => {
   });
 };
 
-export default (trigger) => {
-  useEffect(() => {
+function useConfetti(trigger) {
+  return useEffect(() => {
     if (trigger) {
       fire(0.25, {
         spread: 26,
@@ -43,4 +43,6 @@ export default (trigger) => {
       });
     }
   }, [trigger]);
-};
+}
+
+export default useConfetti;

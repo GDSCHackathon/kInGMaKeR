@@ -34,3 +34,9 @@ h2 {
 
   background-color: rgb(101, 5, 255);
 }
+.nickname {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

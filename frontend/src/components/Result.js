@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useConfetti from "../utils/useConfetti";
 
 function Result() {
   const [nickname, setNickname] = useState("???");
   const [size, setSize] = useState(0);
 
+  const navigate = useNavigate();
+
   useConfetti(size === 1);
+
   useEffect(() => {
     setSize((prev) => Math.min(prev + 1, 1));
   }, []);
@@ -26,16 +29,26 @@ function Result() {
     <div>
       {nickname !== "???" && (
         <>
-          <h1>닉네임 : {nickname}</h1>
+          <h1 className="nickname">닉네임 : {nickname}</h1>
           <h2>맘에 드시나요?</h2>
 
-          <Link className="yes" to="/yes">
+          <span
+            className="yes"
+            onClick={() => {
+              navigate("/yes", { replace: true });
+            }}
+          >
             yes
-          </Link>
+          </span>
 
-          <Link className="no" to="/no">
+          <span
+            className="no"
+            onClick={() => {
+              navigate("/no", { replace: true });
+            }}
+          >
             no
-          </Link>
+          </span>
         </>
       )}
     </div>
