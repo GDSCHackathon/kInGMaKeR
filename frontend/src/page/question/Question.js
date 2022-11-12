@@ -43,12 +43,12 @@ function QuestionPage() {
   return (
     <div className="question-container">
       <div className="button button__left" onClick={onClickNext}>
-        {questionIndex < END_INDEX ? (
+        {questionIndex <= END_INDEX ? (
           <img src={rightButton} alt="다음" />
         ) : null}
       </div>
       <div>
-        {questionIndex < END_INDEX ? (
+        {questionIndex <= END_INDEX ? (
           <Question
             title={questions[questionIndex].title}
             placeholder={questions[questionIndex].placeholder}
