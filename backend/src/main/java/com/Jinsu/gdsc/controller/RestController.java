@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-@CrossOrigin(originPatterns = "http://localhost:8080")
+@CrossOrigin(originPatterns = "http://localhost:3000") //cors 에러 해결
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
 
@@ -41,7 +41,7 @@ public class RestController {
         for(int i = 2; i<index-1; i++){
             result += words.charAt(i);
         }
-        map.put("result", result);
+        map.put("result", result);ㅐㅑㅔ
         return map;
     }
 }
