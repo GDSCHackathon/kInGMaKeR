@@ -6,7 +6,7 @@ function Title() {
   return (
     <div>
       <div>
-        <Link to="Error">
+        <Link to="/error">
           <button id="startButton">S</button>
         </Link>
       </div>
@@ -14,9 +14,9 @@ function Title() {
       <div class="imgHoverEvent event1">
         <div class="imgBox"></div>
         <div class="hoverBox">
-          <Link to="QnA">시작하기</Link>
+          <Link to="/qna">시작하기</Link>
         </div>{" "}
-        <Link to="/QnA"></Link>
+        <Link to="/qna"></Link>
       </div>
     </div>
   );

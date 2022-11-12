@@ -83,6 +83,7 @@ function Question({ title, placeholder, index }) {
       <input
         className="answer__input"
         value={answer}
+        placeholder={placeholder}
         onChange={onChangeAnswer}
       />
       <p className="answer__title">
