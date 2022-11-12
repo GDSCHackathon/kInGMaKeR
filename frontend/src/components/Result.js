@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useConfetti from "../utils/useConfetti";
 
-// const SEVER_URL = "/?format=json&count=2";
 const PROXY = window.location.hostname === "localhost" ? "" : "/proxy";
 const URL = `${PROXY}/?format=json&count=1`;
 
@@ -21,10 +20,7 @@ function Result() {
   const getNickname = () => {
     fetch(URL)
       .then((res) => res.json())
-      .then(({ words }) => {
-        console.log(words);
-        setNickname(() => words[0]);
-      })
+      .then(({ words }) => setNickname(() => words[0]))
       .catch((e) => console.log(e));
   };
 
