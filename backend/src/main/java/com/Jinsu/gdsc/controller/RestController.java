@@ -2,6 +2,7 @@ package com.Jinsu.gdsc.controller;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -12,6 +13,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
+@CrossOrigin(originPatterns = "http://localhost:8080")
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
 
