@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useConfetti from "../utils/useConfetti";
 
 function Result() {
   const [nickname, setNickname] = useState("???");
+  const [size, setSize] = useState(0);
+
+  useConfetti(size === 1);
+  useEffect(() => {
+    setSize((prev) => Math.min(prev + 1, 1));
+  }, []);
 
   const getNickname = () => {
     fetch("http://192.168.124.41:8080/result")

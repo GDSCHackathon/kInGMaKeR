@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 function Title() {
   return (
     <div>
+      {/* <span id="heesu">JUNG HEE SU</span>
+      <span id="jinsu">KIM JIN SU</span>
+      <span id="byungju">PARK BYUNG JU</span>
+      <span id="dohoon">BAEK DO HOON</span> */}
       <div>
         <Link to="/error">
           <button id="startButton">S</button>
